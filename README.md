@@ -4,19 +4,19 @@ A dark, luminous theme for [widget_list](https://github.com/davidrenne/widget_li
 
 ![AI theme preview in the Rails 8 example, showing the Sequel inventory grid](docs/ai-theme-rails8-preview.png)
 
-*The grid uses this gem; the surrounding page shell is part of the Rails 8 example app.*
+_The grid uses this gem; the surrounding page shell is part of the Rails 8 example app._
 
-The theme targets widget_list 2.0.1 or newer on Rails 8 with Sprockets. It is currently under development and is **not yet published to RubyGems**.
+Version **0.1.0 is published on [RubyGems](https://rubygems.org/gems/widget_list_theme_ai)**. The theme targets widget_list 2.0.1 or newer on Rails 8 with Sprockets.
 
-## Try it locally
+## Install
 
-Clone this repository beside your Rails app and add the local gem to your Gemfile:
+Add these gems to your Rails app's Gemfile:
 
 ```ruby
 gem 'sprockets-rails'
 gem 'jquery-rails'
 gem 'widget_list', '~> 2.0', '>= 2.0.1'
-gem 'widget_list_theme_ai', path: '../widget_list_theme_ai'
+gem 'widget_list_theme_ai', '0.1.0'
 ```
 
 Then run `bundle install`. Add the theme stylesheet to `app/assets/config/manifest.js`:
@@ -35,7 +35,7 @@ The theme automatically supplies widget_list defaults when Bundler requires the 
 
 ## See it in a working app
 
-The [`codex/ai-theme-example` branch of widget_list_example_rails8](https://github.com/davidrenne/widget_list_example_rails8/tree/codex/ai-theme-example) installs this gem and the current widget_list source from sibling checkouts. It shows both Sequel and Ransack lists and a separate administration console. Clone the example and the core gem beside this repository, check out the branches listed in the example README, then run `bundle install`, `bin/rails db:prepare`, `bin/rails db:seed`, and `bin/rails server`.
+The [`codex/ai-theme-example` branch of widget_list_example_rails8](https://github.com/davidrenne/widget_list_example_rails8/tree/codex/ai-theme-example) shows both Sequel and Ransack lists and a separate administration console. Its checked-in Gemfile was written before the theme release; replace its theme path line with `gem 'widget_list_theme_ai', '0.1.0'` in a local checkout. The example still uses a sibling `widget_list` checkout for the 2.0.2 pagination fix until that core version is published. Then run `bundle install`, `bin/rails db:prepare`, `bin/rails db:seed`, and `bin/rails server`.
 
 ## Design choices
 
