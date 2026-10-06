@@ -11,6 +11,6 @@ if [[ -n "$(git status --porcelain)" ]]; then
   exit 1
 fi
 
-version=$(ruby -Ilib -rwidget_list_theme_ai/version -e 'print WidgetList::VERSION')
+version=$(ruby -Ilib -rwidget_list_theme_ai/version -e 'print WidgetListThemeAi::VERSION')
 gem build widget_list_theme_ai.gemspec --output "widget_list_theme_ai-${version}.gem"
 gem push "widget_list_theme_ai-${version}.gem"
