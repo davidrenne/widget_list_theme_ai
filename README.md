@@ -2,6 +2,10 @@
 
 A dark, luminous theme for [widget_list](https://github.com/davidrenne/widget_list). It pairs midnight navy surfaces with cyan and violet accents, strong table contrast, compact controls, and a clear system font stack. The stylesheet stays inside widget_list grids, so it does not restyle the rest of a Rails app. No remote fonts, images, or JavaScript are required.
 
+![AI theme preview in the Rails 8 example, showing the Sequel inventory grid](docs/ai-theme-rails8-preview.png)
+
+*The grid uses this gem; the surrounding page shell is part of the Rails 8 example app.*
+
 The theme targets widget_list 2.0.1 or newer on Rails 8 with Sprockets. It is currently under development and is **not yet published to RubyGems**.
 
 ## Try it locally

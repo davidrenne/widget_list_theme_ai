@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.homepage = 'https://github.com/davidrenne/widget_list_theme_ai'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.2'
-  spec.files = Dir['lib/**/*', 'vendor/**/*', 'README.md', 'LICENSE.txt'].select { |path| File.file?(path) }
+  spec.files = Dir['lib/**/*', 'vendor/**/*', 'docs/**/*', 'README.md', 'LICENSE.txt'].select { |path| File.file?(path) }
   spec.require_paths = ['lib']
   spec.add_dependency 'widget_list', '~> 2.0', '>= 2.0.1'
   spec.metadata['rubygems_mfa_required'] = 'true'
