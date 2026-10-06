@@ -33,9 +33,9 @@ Load it **after** widget_list's styles in your layout:
 
 The theme automatically supplies widget_list defaults when Bundler requires the gem. Existing lists need no controller changes. Per-list options passed to `WidgetList.go!` still take precedence. Run `bin/rails assets:precompile` before deploying. The base gem's [Rails 8 setup guide](https://github.com/davidrenne/widget_list#add-it-to-a-rails-8-app) explains the required JavaScript and database setup.
 
-## See it in a working app
+## Try it in the Rails 8 example
 
-The [`codex/ai-theme-example` branch of widget_list_example_rails8](https://github.com/davidrenne/widget_list_example_rails8/tree/codex/ai-theme-example) shows both Sequel and Ransack lists and a separate administration console. Its checked-in Gemfile was written before the theme release; replace its theme path line with `gem 'widget_list_theme_ai', '0.1.0'` in a local checkout. The example still uses a sibling `widget_list` checkout for the 2.0.2 pagination fix until that core version is published. Then run `bundle install`, `bin/rails db:prepare`, `bin/rails db:seed`, and `bin/rails server`.
+The [Rails 8 example](https://github.com/davidrenne/widget_list_example_rails8) demonstrates Sequel and Ransack lists plus the administration console. To see those lists with this theme, add `gem 'widget_list_theme_ai', '0.1.0'` to the example's Gemfile and follow the asset setup above. Then run `bundle install`, `bin/rails db:prepare`, `bin/rails db:seed`, and `bin/rails server`.
 
 ## Design choices
 
